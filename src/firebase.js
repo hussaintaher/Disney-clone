@@ -3,12 +3,12 @@ import { getFirestore, collection } from 'firebase/firestore';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDjrZkh0pEt1uYjatv-OmoaQm_-VzDc5qI",
-  authDomain: "disneyplus-clone-2891d.firebaseapp.com",
-  projectId: "disneyplus-clone-2891d",
-  storageBucket: "disneyplus-clone-2891d.appspot.com",
-  messagingSenderId: "604538919316",
-  appId: "1:604538919316:web:fbc73c8bd0b70fa39ad781"
+  apiKey: process.env.apikey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket:process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
