@@ -5,6 +5,9 @@
 
 In the project directory, you can run:
 
+### `configure your firebase`
+go to .env file and paste firebase configurations
+
 ### `npm install`
 
 to install dependencies
